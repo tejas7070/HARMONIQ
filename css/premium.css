@@ -1,0 +1,164 @@
+body{
+ background-image: url(/img/bg.jpg)
+ 
+}
+.text{
+   size: 60px;
+   color: #fffdfd;
+   display: flex;
+   flex-direction: column;
+   font-size: 60px;
+   font-weight: bolder;
+   margin-top: 160px;
+   margin-left: 60px;
+}
+.text1{
+   color: #e5e5e5;
+   font-size: 40px;
+   font-weight: bolder;
+   margin-top: -50px;
+   margin-left: 70px;
+}
+.text2{
+  color: #e5e5e5;
+  font-size: 20px;
+   font-weight: bolder;
+   margin-top: -30px;
+   margin-left: 75px;
+}
+.wrapper {
+  margin: 40px 1px 1px 400px;
+  display: flex;
+  gap: 50px;
+  align-content: center;
+  border-color: #29d431;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background: rgb(207, 207, 188);
+  opacity:0.8;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border-color: rgba(217, 10, 155, 0.7);
+  box-shadow: #29d431;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.input {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 1px 1px 10px #aaaaaa,
+              -1px -1px 10px #29d431;
+}
+
+.input + .check::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d0d0d0;
+  border-radius: 50%;
+  background-color: #E8E8E8;
+}
+
+.input:checked + .check::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(3, 237, 11, 0.7);
+  border-radius: 50%;
+}
+
+.input[value="standart"]:checked + .check::after {
+  background-color: rgba(255,165,0,0.7);
+}
+
+.input[value="premium"]:checked + .check::after {
+  background-color: rgba(0,128,0,0.7);
+}
+
+.input[value="basic"]:checked {
+  border: 1.5px solid rgba(255, 0, 217, 0.712);
+}
+
+.input[value="standard"]:checked {
+  border: 1.5px solid rgba(217, 10, 155, 0.7);
+}
+
+.input[value="Ultimate"]:checked {
+  border: 1.5px solid rgba(196, 5, 104, 0.7);
+}
+
+.label {
+  color: rgb(28, 37, 30);
+  position: absolute;
+
+  top: 0;
+  left: 10px;
+  z-index: 0;
+}
+
+.label .title {
+  text-shadow: #000000;
+  margin: 15px 0 0 15px;
+  font-weight: bolder;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-decoration: dotted;
+  border-color: #29d431;
+}
+
+.label .price {
+  margin: 40px 2px 0 15px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.label .span {
+  color: rgb(2, 2, 2);
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 2px;
+}
+.label .price .span1 {
+  color: rgb(2, 2, 2);
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.pay-button{
+  font-size: large;
+  font-weight: bold;
+   height: 50px;
+   width: 200px;
+ margin-left: 650px;
+   margin-top: 40px;
+   border-radius: 15px;
+    box-sizing: 3px;
+    border-color: #d0d0d0;
+}
+.pay-button:hover{
+   color: #fffdfd;
+  background-color: #000000;
+}
